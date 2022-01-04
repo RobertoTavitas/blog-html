@@ -92,10 +92,10 @@ p{
 
 .nav{
     background: white;
-    padding: 0 2rem;
     height: 0rem;
     min-height: 10vh;
     overflow: hidden;
+    padding: 0 2rem;
     transition: height 1s ease-in-out;
 }
 
@@ -132,19 +132,21 @@ p{
 }
 
 .nav .nav-items .nav-link{
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
-    position: relative;
     font-family: var(--Abel);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    padding: 1.6rem 1rem;
+    position: relative;
 }
 
-.nav .nav-items .nav-link:hover{
+/* .nav .nav-items .nav-link:hover{
     background-color: var(--midnight);
-}
+} */
 
-.nav .nav-items .nav-link:hover a{
+.nav .nav-items .nav-link:hover a {
     color: var(--white);
+    background-color: var(--midnight);
+    border-radius: 12px;
+    padding: 0 0.8rem;
 }
 
 .nav .nav-brand a{
@@ -161,6 +163,7 @@ p{
 
 .nav .social i{
     padding: 0 .2rem;
+    font-size: 1.3rem;
 }
 
 .nav .social i:hover{
@@ -174,11 +177,17 @@ p{
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../assets/Background-image.png');
+    /* background: url('../assets/background-image.png');
     background-size: cover;
     height: 110vh;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
+    background: url('../assets/Abract02.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
 }
 
 main .site-title .site-background{
@@ -243,7 +252,8 @@ main .blog-content span{
 }
 
 section .container .owl-nav{
-    position: absolute;
+    position: initial;
+    /* justify-content: space-between; */
     top: 0%;
     margin: 0 auto;
     width: 100%;
@@ -253,7 +263,7 @@ section .container .owl-nav{
 .owl-nav .owl-next .owl-nav-next{
     color: var(--text-gray);
     background: transparent;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover{
@@ -264,7 +274,6 @@ section .container .owl-nav{
 .owl-theme .owl-nav [class*='owl-']{
     outline: none;
 }
-
 
 /* -------x------- Blog Carousel -----x------ */
 
